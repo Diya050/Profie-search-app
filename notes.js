@@ -1,7 +1,3 @@
-if ("serviceWorker" in navigator) {
-  // register service worker
-  navigator.serviceWorker.register("service-worker.js");
-}
 
 const APIURL = 'https://api.github.com/users/'
 const main = document.getElementById('main')
