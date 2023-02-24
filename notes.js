@@ -80,7 +80,7 @@ reposEl.appendChild(repoEl)
 
 
 form.addEventListener('submit', (e) => {
-e.preventDefault()
+e.preventDefault() //if the event does not get explicitly handled, its default action should not be taken as it normally would be.
 const user = search.value
 if(user) {
 getUser(user)
