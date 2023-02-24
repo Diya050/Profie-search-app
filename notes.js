@@ -68,7 +68,7 @@ function addReposToCard(repos) {
 const reposEl = document.getElementById('repos')
 repos
 .slice(0, 5)
-.forEach(repo)
+.forEach(repo())
   
 function repo() {
 const repoEl = document.createElement('a')
