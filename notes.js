@@ -1,29 +1,36 @@
 
-const APIURL = 'https://api.github.com/users/'
+const APIURL = 'https://api.github.com/users/' //to fetch data of a user from GitHub
+
 const main = document.getElementById('main')
 const form = document.getElementById('form')
 const search = document.getElementById('search')
-async function getUser(username) {
+
+async function getUser(username) { //a function always returns a promise
 try {
-const { data } = await axios(APIURL + username)
+const { data } = await axios(APIURL + username) // creating a get request to fetch data
 createUserCard(data)
 getRepos(username)
-} catch(err) {
+} 
+catch(err) {
 if(err.response.status == 404) {
-createErrorCard('No profile with this username')
+createErrorCard('No profile with this username') //get a proper error message
 }
 }
 }
+
+
 async function getRepos(username) {
 try {
 const { data } = await axios(APIURL + username + '/repos?sort=created')
 addReposToCard(data)
-} catch(err) {
+} 
+catch(err) {
 createErrorCard('Problem fetching repos')
 }
 }
+
 function createUserCard(user) {
-const userID = user.name || user.login
+const userID = user.name || user.login //( || ) returns the boolean value true if either or both operands is true and returns false otherwise.
 const userBio = user.bio ? `<p>${user.bio}</p>` : ''
 const cardHTML = `
 <div class="card">
@@ -38,12 +45,16 @@ ${userBio}
 <li>${user.following} <strong>Following</strong></li>
 <li>${user.public_repos} <strong>Repos</strong></li>
 </ul>
+<!--The <strong> tag is used to define text with strong importance, the content inside is typically displayed in bold-->
+
 <div id="repos"></div>
 </div>
 </div>
 `
-main.innerHTML = cardHTML
+main.innerHTML = cardHTML //The innerHTML property sets or returns the HTML content (inner HTML) of an element.
 }
+
+
 function createErrorCard(msg) {
 const cardHTML = `
 <div class="card">
@@ -52,18 +63,21 @@ const cardHTML = `
 `
 main.innerHTML = cardHTML
 }
+
 function addReposToCard(repos) {
 const reposEl = document.getElementById('repos')
 repos
 .slice(0, 5)
-.forEach(repo => {
+.forEach(repo)
+  
+function repo() {
 const repoEl = document.createElement('a')
 repoEl.classList.add('repo')
 repoEl.href = repo.html_url
 repoEl.target = '_blank'
 repoEl.innerText = repo.name
 reposEl.appendChild(repoEl)
-})
+}
 }
 form.addEventListener('submit', (e) => {
 e.preventDefault()
