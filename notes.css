@@ -14,11 +14,11 @@ align-items: center;
 justify-content: center;
 height: 100vh;
 overflow: hidden; /*specifies what happens if content overflows an element's box.*/
-margin: 30;
+margin: 10;
 }
 
 .user-form {
-width: 90%;
+width: 100%;
 max-width: 700px;
 }
 
@@ -31,14 +31,16 @@ border-radius: 10px;
 color: #fff;
 padding: 1rem;
 margin-bottom: 2rem;
-font-family: inherit;
+font-family: inherit; /* it will receive the body's font family*/
 font-size: 1rem;
 box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
 0 15px 40px rgba(0, 0, 0, 0.1);
 }
+
 .user-form input::placeholder {
-color: #bbb;
+color: #bbb; 
 }
+
 .user-form input:focus {
 outline: none;
 }
