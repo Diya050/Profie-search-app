@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> //The lang attribute specifies the language of the element's content ('en' = english)
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <meta charset="UTF-8" /> // specifies the character encoding
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> //instructions on how to control the page's dimensions and scaling
+        
         <link rel="stylesheet" href="notes.css" />
         <link rel="manifest" href="manifest.json" />
+        
         <title>Github Profiles</title>
     </head>
     <body>
+        
         <form class="user-form" id="form">
             <input
                 type="text"
@@ -16,20 +21,24 @@
                 placeholder="Search a Github User"
             />
         </form>
-        <main id="main"></main>
+        
+        <main id="main"></main> //specifies the main content of a document
+        
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
             integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
             crossorigin="anonymous"
-        ></script>
+        ></script> // linking axios library
+        
         <script src="notes.js"></script>
-<script>
- if (!navigator.serviceWorker.controller) {
-     navigator.serviceWorker.register("service_worker.js").then(function(reg) {
-         console.log("Service worker has been registered for scope: " + reg.scope);
-     });
- }
-</script>
+        
+    <script>
+    if (!navigator.serviceWorker.controller) {
+        navigator.serviceWorker.register("service_worker.js").then(function(reg) {
+             console.log("Service worker has been registered for scope: " + reg.scope);
+         });
+    }
+    </script> // accessing service_worker.js file
 
     </body>
 </html>
