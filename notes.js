@@ -81,8 +81,8 @@ reposEl.appendChild(repoEl)
 }
 
 
-form.addEventListener('submit', (e));
-function (e){
+form.addEventListener('submit', e);
+function e(){
 e.preventDefault()
 const user = search.value
 if(user) {
