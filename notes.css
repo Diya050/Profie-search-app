@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap'); // to access font-style= "poppins"
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap'); /*to access font-style= "poppins"*/
 
 * {
-box-sizing: border-box;  //padding and border are included in the width and height for all elements
+box-sizing: border-box;  /*padding and border are included in the width and height for all elements*/
 }
 
 body {
-background-color: #33ffff;
+background-color: #2a2a72;
 color: #fff;
 font-family: 'Poppins', sans-serif;
-display: flex;
-flex-direction: column;
+display: flex; /*align like column or row with auto width and auto height*/
+flex-direction: row;
 align-items: center;
 justify-content: center;
 height: 100vh;
