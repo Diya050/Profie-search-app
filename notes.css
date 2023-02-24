@@ -14,7 +14,7 @@ align-items: center;
 justify-content: center;
 height: 100vh;
 overflow: hidden; /*specifies what happens if content overflows an element's box.*/
-margin: 10;
+margin: 30;
 }
 .user-form {
 width: 100%;
