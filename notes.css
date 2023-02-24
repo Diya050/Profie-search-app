@@ -8,13 +8,13 @@ body {
 background-color: #2a2a72;
 color: #fff;
 font-family: 'Poppins', sans-serif;
-display: flex; /*align like column or row with auto width and auto height*/
-flex-direction: row;
+display: flex; /*automatically align like column or row with auto width and auto height*/
+flex-direction: column;
 align-items: center;
 justify-content: center;
 height: 100vh;
-overflow: hidden;
-margin: 0;
+overflow: hidden; /*specifies what happens if content overflows an element's box.*/
+margin: 10;
 }
 .user-form {
 width: 100%;
