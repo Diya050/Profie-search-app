@@ -81,12 +81,12 @@ reposEl.appendChild(repoEl)
 }
 
 
-form.addEventListener('submit', (e));
-function e(){
+form.addEventListener('submit', call())
+function call(){
 e.preventDefault()
 const user = search.value
 if(user) {
 getUser(user)
 search.value = ''
 }
-})
+}
