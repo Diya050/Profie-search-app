@@ -59,5 +59,12 @@ Once it is installed, run the below command, make sure that we are in the same p
 
 `$ sw-precache`
 
+Then linked service_worker.js file to html document by:
+```html
+if ("serviceWorker" in navigator) {
+  // register service worker
+  navigator.serviceWorker.register("service-worker.js");
+}
+```
 Then by using Netlify, generated the app link:
 https://main--github-profiles-find.netlify.app/
