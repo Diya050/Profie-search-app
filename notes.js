@@ -45,7 +45,7 @@ ${userBio}
 <li>${user.following} <strong>Following</strong></li>
 <li>${user.public_repos} <strong>Repos</strong></li>
 </ul>
-//The <strong> tag is used to define text with strong importance, the content inside is typically displayed in bold
+<!--The <strong> tag is used to define text with strong importance, the content inside is typically displayed in bold-->
 
 <div id="repos"></div>
 </div>
