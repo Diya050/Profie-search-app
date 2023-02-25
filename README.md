@@ -4,7 +4,6 @@ This app helps us to look for profiles of different people on github.
 ## Features of this PWA that we're building:
 
 1. Works responsively on deskop and mobile
-1. Works Offline
 1. Can be installed on desktop and mobile like an App
 1. Extremely light weight
 
