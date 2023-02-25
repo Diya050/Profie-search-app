@@ -1,7 +1,7 @@
 {
   "name": "Github Search App by Diya",
   "short_name": "Search",
-  "start_url": "Notes.html",
+  "start_url": "index.html",
   "scope": "./",
   "icons": [
     {
