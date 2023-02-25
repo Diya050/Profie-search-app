@@ -17,7 +17,7 @@ Then I created a manifest file with the name manifest.json that has the metadata
 {
   "name": "Github Search App by Diya",
   "short_name": "Search",
-  "start_url": "Notes.html",
+  "start_url": "index.html",
   "scope": "./",
   "icons": [
     {
