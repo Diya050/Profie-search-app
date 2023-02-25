@@ -66,8 +66,7 @@ main.innerHTML = cardHTML
 
 function addReposToCard(repos) {
 const reposEl = document.getElementById('repos')
-repos.slice(0, 20) //The slice() method extracts a part of a string.
-  
+
 repos.forEach(function(repo) { //The function will be executed for every single element 
 const repoEl = document.createElement('a')
 repoEl.classList.add('repo')
