@@ -66,8 +66,9 @@ main.innerHTML = cardHTML
 
 function addReposToCard(repos) {
 const reposEl = document.getElementById('repos')
-repos.slice(0, 5) //The slice() method extracts a part of a string.
-repos.forEach(function(repo) {
+repos.slice(0, 20) //The slice() method extracts a part of a string.
+  
+repos.forEach(function(repo) { //The function will be executed for every single element 
 const repoEl = document.createElement('a')
 repoEl.classList.add('repo')
 repoEl.href = repo.html_url
@@ -75,7 +76,8 @@ repoEl.target = '_blank' //a special keyword that will open links in a new tab e
 repoEl.innerText = repo.name //innerText represents the rendered text content of a node and its descendants
 reposEl.appendChild(repoEl) //The appendChild() method appends a node (element) as the last child of an element
 })
-} //The function will be executed for every single element 
+  
+} 
 
 
 form.addEventListener('submit', function(e){
@@ -85,4 +87,4 @@ if(user) {
 getUser(user)
 search.value = ''
 }
-})
+}) //After getting user the input will become empty.
